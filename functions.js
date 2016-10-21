@@ -83,7 +83,7 @@ fn = {
 			"\rAD,356,989,2,2,0,1E," + row.seats + 
 			"\rE\r"
 
-		fs.writeFile("C:/Users/mikk.reinsalu/Desktop/print.txt", text, function(err) {	//kirjutab antud aadressile txt faili
+		fs.writeFile("CHANGE_TO_FILEPATH", text, function(err) {	//kirjutab antud aadressile txt faili
 			if(err) {																	// sisuks text väärtus
 				return console.log(err);					//teises arvutis kindlasti vahetada ära faili asukoht!!!
 			}
@@ -240,9 +240,8 @@ fn = {
 
 	},
 	printFile: () => {
-		execSync('print /d:\\\\MIKKREINSALU-PC\\RT700 C:\\Users\\mikk.reinsalu\\Desktop\\printtest.txt');
+		execSync('print CHANGE_TO_FILEPATH');
 		// command prompt käsklus faili printimiseks
-		// uue arvuti puhul tuleb muuta argumente!!!
 	}
 
 
